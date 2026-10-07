@@ -3,108 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasuke Creamy - Lumer & Bikin Ketagihan</title>
-    <!-- Menggunakan Tailwind CSS untuk desain instan yang rapi -->
+    <title>Jasuke & Tansuke Creamy - Lumer & Bikin Ketagihan</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .bounce { animation: bounce 2s infinite; }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .hero-bg {
+            background-color: #FBBF24;
+            background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23f59e0b" fill-opacity="0.1" fill-rule="evenodd"%3E%3Ccircle cx="3" cy="3" r="3"/%3E%3Ccircle cx="13" cy="13" r="3"/%3E%3C/g%3E%3C/svg%3E');
+        }
+    </style>
 </head>
-<body class="bg-gray-50 font-sans text-gray-800 leading-relaxed">
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/6289654047004?text=Halo%20min,%20mau%20pesan%20Jasuke/Tansuke-nya%20dong!" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 hover:bg-green-600 transition transform hover:scale-110 bounce">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
 
     <!-- HERO SECTION -->
-    <section class="bg-yellow-400 py-20 px-4 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
-                Lupakan Jasuke Biasa! Nikmati Sensasi <span class="text-white drop-shadow-md">Lumer & Creamy</span> yang Bikin Ketagihan.
-            </h1>
-            <p class="text-lg md:text-xl text-gray-800 mb-8 max-w-2xl mx-auto">
-                Perpaduan jagung manis utuh, keju premium melimpah, dan saus creamy rahasia kami. Sensasi manis, gurih, dan lumer di mulut sejak suapan pertama!
-            </p>
-            <a href="https://wa.me/6281234567890?text=Halo%20min,%20mau%20pesan%20Jasuke%20Creamy-nya%20dong!" target="_blank" class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg transform transition hover:scale-105">
-                MAU CICIPIN LUMERNYA SEKARANG!
-            </a>
+    <section class="hero-bg py-20 px-4 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 relative z-10">
+            <!-- Teks -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4 text-sm tracking-wide">
+                    <i class="fas fa-fire mr-1"></i> Paling Laris di Cimahi!
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    Lupakan Camilan Biasa! Rasakan <span class="text-white drop-shadow-lg block mt-2">Sensasi Lumernya</span>
+                </h1>
+                <p class="text-lg text-gray-800 mb-8 max-w-xl mx-auto md:mx-0 opacity-90">
+                    Perpaduan sempurna jagung manis utuh atau ketan pulen legit dengan keju premium melimpah, dan saus creamy rahasia. Creamy, Cheesy, Yummy!
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="https://wa.me/6289654047004?text=Halo%20min,%20mau%20pesan%20Jasuke/Tansuke-nya%20dong!" target="_blank" class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold text-lg py-4 px-8 rounded-full shadow-xl transform transition hover:scale-105">
+                        <i class="fab fa-whatsapp mr-2"></i> Pesan Sekarang
+                    </a>
+                </div>
+            </div>
+            <!-- Foto Produk Utama -->
+            <div class="md:w-1/2 relative">
+                <div class="absolute inset-0 bg-white opacity-20 blur-3xl rounded-full"></div>
+                <img src="Jasuke Jagung Susu Keju Flyer Pamflet Design.jpeg" alt="Jasuke Premium" class="rounded-3xl shadow-2xl w-full object-cover transform md:rotate-2 hover:rotate-0 transition duration-500 border-4 border-white relative z-10">
+            </div>
         </div>
     </section>
 
     <!-- BAGIAN MASALAH -->
-    <section class="py-16 px-4 bg-white text-center">
+    <section class="py-20 px-4 bg-white text-center">
         <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl font-bold text-red-600 mb-4">Sering Kecewa Beli Jasuke yang Rasanya "Nanggung"?</h2>
-            <p class="text-gray-600 text-lg">
-                Kejunya pelit? Susunya kurang terasa? Atau parahnya... jagungnya keras dan hambar? 
-                Jangan buang uang Anda untuk Jasuke yang biasa-biasa saja. Saatnya beralih ke Jasuke yang BENAR-BENAR memanjakan lidah Anda.
+            <h2 class="text-3xl md:text-4xl font-extrabold text-red-600 mb-6">Sering Kecewa Beli Jasuke atau Tansuke yang Rasanya "Nanggung"?</h2>
+            <p class="text-gray-600 text-lg md:text-xl leading-relaxed">
+                Kejunya pelit? Susunya kurang terasa? Ketannya keras, atau jagungnya hambar? 
+                <br><br>
+                <strong>Jangan buang uang Anda untuk camilan yang biasa-biasa saja.</strong> Saatnya beralih ke Jasuke dan Tansuke yang BENAR-BENAR memanjakan lidah Anda.
             </p>
         </div>
     </section>
 
-    <!-- BAGIAN SOLUSI & MANFAAT -->
-    <section class="py-16 px-4 bg-yellow-50">
+    <!-- BAGIAN SOLUSI & MANFAAT (Diubah menjadi 4 kolom untuk memasukkan Ketan) -->
+    <section class="py-20 px-4 bg-yellow-50 border-t border-yellow-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-12">Memperkenalkan: Kualitas Premium Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center">
+                    <div class="w-16 h-16 mx-auto bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-spoon"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Saus Rahasia</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Bukan kental manis biasa. Racikan creamy sauce premium kami gurih, milky, dan lumer sempurna.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center">
+                    <div class="w-16 h-16 mx-auto bg-yellow-100 text-green-600 rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Jagung Pilihan</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">100% Jagung manis pipil utuh kualitas super. Dikukus dengan tingkat kematangan pas (empuk & manis alami).</p>
+                </div>
+                <!-- Card 3 (Ketan) -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center">
+                    <div class="w-16 h-16 mx-auto bg-yellow-100 text-amber-700 rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-bowl-rice"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Ketan Legit</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Beras ketan pilihan yang dimasak dengan teknik khusus, menghasilkan tekstur yang sangat pulen, lembut, dan tidak keras.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center">
+                    <div class="w-16 h-16 mx-auto bg-yellow-100 text-orange-500 rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Topping Melimpah</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Kami pantang pelit keju! Topping keju premium melimpah ruah sampai menutupi setiap porsinya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PILIHAN MENU / VARIAN RASA -->
+    <section class="py-20 px-4 bg-gray-50">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Memperkenalkan: Jasuke Creamy Premium!</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
-                    <div class="text-4xl mb-4">🥣</div>
-                    <h3 class="text-xl font-bold mb-2">Saus Rahasia</h3>
-                    <p class="text-gray-600">Bukan kental manis biasa. Racikan creamy sauce premium kami gurih, milky, dan lumer membungkus setiap butir jagung.</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-4">Pilihan Rasa Favorit</h2>
+            <p class="text-center text-gray-600 mb-12">Pilih sensasi lumer yang paling pas buat kamu!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Varian 1 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition max-w-xl mx-auto w-full">
+                    <div class="bg-gray-100 p-4 flex justify-center">
+                        <img src="jasuke no bg.png" alt="Jasuke Original Full Keju" class="h-56 object-contain">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Jasuke Original Full Keju</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Saus creamy manis dengan tumpukan keju cheddar premium di atas jagung manis yang hangat.</p>
+                        <p class="font-black text-orange-600 text-2xl">Rp 18.000</p>
+                        <a href="https://wa.me/6289654047004?text=Halo%20min,%20pesan%20Jasuke%20Original%20dong!" class="mt-4 block w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 rounded-lg transition">Pesan Ini</a>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
-                    <div class="text-4xl mb-4">🌽</div>
-                    <h3 class="text-xl font-bold mb-2">Jagung Pilihan</h3>
-                    <p class="text-gray-600">100% Jagung manis pipil utuh kualitas super. Dikukus dengan tingkat kematangan sempurna (empuk & manis alami).</p>
+
+                <!-- Varian 2 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition max-w-xl mx-auto w-full">
+                    <div class="bg-amber-50 p-4 flex justify-center">
+                        <img src="tansuke no bg.png" alt="Ketan Susu Keju" class="h-56 object-contain">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Ketan Susu Keju (Tansuke)</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Ketan pulen yang super lembut, disiram dengan susu creamy dan ditaburi keju gurih melimpah.</p>
+                        <p class="font-black text-orange-600 text-2xl">Rp 20.000</p>
+                        <a href="https://wa.me/6289654047004?text=Halo%20min,%20pesan%20Jasuke%20Ketan%20Susu%20Keju%20dong!" class="mt-4 block w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 rounded-lg transition">Pesan Ini</a>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
-                    <div class="text-4xl mb-4">🧀</div>
-                    <h3 class="text-xl font-bold mb-2">Topping Brutal</h3>
-                    <p class="text-gray-600">Kami pantang pelit keju! Topping keju premium melimpah ruah sampai menutupi jagungnya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI PELANGGAN (Revisi Bintang & Hapus Emoji Ramai) -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-12">Apa Kata Mereka?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Testi 1 -->
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border-t-4 border-yellow-400 relative">
+                    <i class="fas fa-quote-left text-yellow-300 text-3xl absolute top-4 left-4 opacity-50"></i>
+                    <p class="italic text-gray-600 mb-6 mt-4 relative z-10">"Sumpah ini jasuke paling creamy yang pernah aku makan! Gak bikin eneg sama sekali, kejunya beneran gak pelit."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full mr-3 flex items-center justify-center text-gray-500"><i class="fas fa-user"></i></div>
+                        <div>
+                            <div class="font-bold text-gray-800 text-sm">Dinda</div>
+                            <div class="text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testi 2 -->
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border-t-4 border-yellow-400 relative">
+                     <i class="fas fa-quote-left text-yellow-300 text-3xl absolute top-4 left-4 opacity-50"></i>
+                    <p class="italic text-gray-600 mb-6 mt-4 relative z-10">"Ketannya juara! Lembut banget dan lumer di mulut pas dimakan sama susunya. Recommended banget buat ngemil."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full mr-3 flex items-center justify-center text-gray-500"><i class="fas fa-user"></i></div>
+                        <div>
+                            <div class="font-bold text-gray-800 text-sm">Ibu Rina</div>
+                            <div class="text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testi 3 -->
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border-t-4 border-yellow-400 relative">
+                     <i class="fas fa-quote-left text-yellow-300 text-3xl absolute top-4 left-4 opacity-50"></i>
+                    <p class="italic text-gray-600 mb-6 mt-4 relative z-10">"Saus creamynya beda dari yang lain, gurih manisnya pas. Cocok banget buat temen nonton drakor malam-malam!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full mr-3 flex items-center justify-center text-gray-500"><i class="fas fa-user"></i></div>
+                        <div>
+                            <div class="font-bold text-gray-800 text-sm">Tari</div>
+                            <div class="text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- PENAWARAN (OFFER) & URGENSI -->
-    <section class="py-16 px-4 bg-orange-500 text-white text-center">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6">Cocok Buat Nonton Drakor atau Me-Time!</h2>
-            <div class="bg-white text-gray-900 rounded-2xl p-8 max-w-lg mx-auto shadow-xl">
-                <p class="text-gray-500 line-through text-xl">Harga Normal: Rp 25.000/cup</p>
-                <p class="text-4xl font-extrabold text-orange-600 my-2">Cuma Rp 18.000/cup!</p>
-                <div class="mt-6 p-4 bg-yellow-100 rounded-lg border-2 border-yellow-400">
-                    <p class="font-bold text-lg">PROMO BUNDLING (Lebih Untung!)</p>
-                    <p class="text-gray-700">Beli Paket Keluarga (4 Cup) hanya Rp 65.000 <br> <span class="text-red-600 font-bold">+ GRATIS Ekstra Topping Mozzarella!</span></p>
+    <section class="py-20 px-4 bg-orange-500 text-white text-center relative">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/food.png')] opacity-10"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-8">Cocok Buat Nonton Drakor atau Me-Time!</h2>
+            <div class="bg-white text-gray-900 rounded-3xl p-10 max-w-lg mx-auto shadow-2xl transform hover:scale-105 transition duration-300">
+                <span class="inline-block bg-red-100 text-red-600 font-bold px-3 py-1 rounded-full mb-2 text-sm uppercase tracking-wider">Promo Spesial</span>
+                <p class="text-gray-400 line-through text-lg mt-2">Harga Normal: Rp 25.000/cup</p>
+                <p class="text-5xl font-black text-orange-600 my-2">Mulai Rp 18.000!</p>
+                
+                <div class="mt-8 p-5 bg-yellow-50 rounded-xl border-2 border-dashed border-yellow-400">
+                    <p class="font-extrabold text-xl text-gray-800 mb-1">PROMO MIX KELUARGA</p>
+                    <p class="text-gray-600 mb-2">Beli Paket (2 Jasuke + 2 Tansuke)</p>
+                    <p class="text-2xl font-black text-gray-900 mb-2">Hanya Rp 70.000</p>
+                    <p class="text-red-600 font-bold text-lg bg-red-50 inline-block px-3 py-1 rounded-lg">+ GRATIS Ekstra Topping Mozzarella!</p>
                 </div>
-                <p class="text-sm text-gray-500 mt-4">*Promo Bundling & Gratis Mozzarella hanya berlaku untuk pemesanan hari ini sebelum jam 17.00</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="py-16 px-4 bg-white">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-8">Yang Sering Ditanyakan</h2>
-            <div class="space-y-4">
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <h4 class="font-bold">Bisa dikirim ke mana saja?</h4>
-                    <p class="text-gray-600">Untuk menjaga kualitas agar tetap hangat dan lumer, saat ini kami hanya melayani pengiriman instan (Gojek/Grab) di area Cimahi, Bandung dan sekitarnya.</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <h4 class="font-bold">Apakah aman untuk anak-anak?</h4>
-                    <p class="text-gray-600">100% Aman dan bergizi! Tanpa pemanis buatan, murni dari jagung manis segar dan susu berkualitas.</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <h4 class="font-bold">Bagaimana jika pesanan sampai dalam keadaan dingin/rusak?</h4>
-                    <p class="text-gray-600">Garansi 100% Puas! Fotokan dan kirim ke kami. Kami ganti dengan cup yang BARU hari itu juga, tanpa banyak tanya!</p>
-                </div>
+                <p class="text-xs text-gray-400 mt-6">*Promo Bundling & Gratis Mozzarella hanya berlaku untuk pemesanan hari ini sebelum jam 17.00</p>
             </div>
         </div>
     </section>
 
     <!-- FINAL CTA (FOOTER) -->
-    <section class="py-16 px-4 bg-gray-900 text-white text-center">
+    <section class="py-20 px-4 bg-gray-900 text-white text-center">
         <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6">Awas Air Liur Menetes! 🤤</h2>
-            <p class="text-xl mb-8">Daripada cuma dibayangin lumernya, mending pesan sekarang sebelum kehabisan stok jagung hari ini.</p>
-            <a href="https://wa.me/089654047004?text=Halo%20min,%20mau%20pesan%20Jasuke%20Creamy-nya%20dong!" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold text-2xl py-4 px-10 rounded-full shadow-lg transform transition hover:scale-105">
-                PESAN VIA WHATSAPP SEKARANG
+            <h2 class="text-4xl font-extrabold mb-6">Jangan Sampai Kehabisan!</h2>
+            <p class="text-xl mb-10 text-gray-300">Daripada cuma dibayangin lumernya, mending pesan sekarang sebelum kehabisan stok hari ini.</p>
+            <a href="https://wa.me/6289654047004?text=Halo%20min,%20mau%20pesan%20Jasuke/Tansuke%20Creamy-nya%20dong!" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold text-2xl py-5 px-12 rounded-full shadow-2xl transform transition hover:-translate-y-2">
+                <i class="fab fa-whatsapp mr-2"></i> PESAN VIA WHATSAPP
             </a>
-            <p class="mt-8 text-gray-500">&copy; 2026 Jasuke Creamy. Dibuat dengan ❤️ untuk pecinta lumer.</p>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800 text-gray-500 text-sm flex flex-col items-center">
+                <p class="mb-2">&copy; 2026 Jasuke Premium. Dibuat untuk pecinta camilan lumer di Cimahi & sekitarnya.</p>
+                <div class="flex space-x-4 mt-2">
+                    <span class="bg-gray-800 px-3 py-1 rounded text-xs font-bold text-white">GoFood</span>
+                    <span class="bg-gray-800 px-3 py-1 rounded text-xs font-bold text-white">ShopeeFood</span>
+                    <span class="bg-gray-800 px-3 py-1 rounded text-xs font-bold text-white">GrabFood</span>
+                </div>
+            </div>
         </div>
     </section>
 
